@@ -20,7 +20,10 @@
     h1 a { text-decoration: none }
     h2 { font-size: 1.5em; color: #000000; }
     h3 { text-align: center; color: #000000; }
-    a { color: #000000; }
+    a:link { text-decoration: none; color: #000000; }
+    a:visited { text-decoration: none; color: #222222; }
+    a:active { text-decoration: none; color: #000000; }
+    a:hover { text-decoration: underline; color: #000000; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
@@ -32,7 +35,9 @@
  <body>
  <h1>OKWS Home</h1>
 
- <h2>News!</h2>
+ <h2>News</h2>
+
+ <h3>12 Dec 2011</h3>
  <p>Sorry for the downtime!</p>
 
  <p>We've move off of our old dokuwiki, self-hosted machine, and onto a
@@ -40,10 +45,10 @@
  Most of the OKWS wiki entries should be ported, but there's work left
  to be done on sfslite and tame documentation.</p>
 
- <p>Also, it would be nice to get some CSS going here!</p>
-  
-
  <h2>Software Packages</h2>
+ The main OKWS software package also depends upon the sfslite programming libraries
+ for C++.  They are currently released separately, though in the future might be 
+ bundled together for ease of installation.
  <ul>
   <li><a href="https://github.com/okws/okws">OKWS</a></li>
   <li><a href="https://github.com/okws/sfslite">sfslite</a></li>
